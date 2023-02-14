@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking-Hoteller</title>
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <!-- fontawsome-->
+    <link rel="stylesheet" href="vendor/css/all.min.css" />
+    <!-- wow animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- <link rel="stylesheet" href="vendor/css/animate.css" /> -->
+    <!-- custom css-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
+</head>
+
+<body>
+
+
+    <!--  loading screen-->
+  <div class="booking-loading">
+    <span >
+          <img  class="loadingimage " src="assets/images/logo (1).png" style=" width: 140px; opacity: .35; "/>
+    </span>
+  </div>
+
+    <!--  top button-->
+  <div class="booking-top">
+    <button class="border-0 bg-transparent"> <i class="fa-solid fa-chevron-up"></i></button>
+   </div>
+<!--  start navbar -->
+<nav class="navbar fixed-top navbar-expand-lg bg-tranparent" id="navbar">
+    <div class="container">
+        <div>
+            <a class="iconn" href="#">
+                <i class="fa-solid fa-bars"></i>
+             </a>
+            <a class="navbar-menu "  id="registerPage" href="#">menu</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav me-auto mb-2 ">
+                <li class="nav-item">
+                    <span class="nav-link" href="#">EN</span>
+                </li>
+                <li class="nav-item">
+                    <span class="nav-link" href="#">ED</span>
+                </li>
+            </ul>
+         </div>
+            <div class=" d-flex ">
+                <a href="index.html">
+                    <img src="assets/images/logo (1).png" />
+                </a>
+            </div>
+            <div class="d-flex">
+                <a class="a-title" href="booking.html">
+                    <span class="title">BOOK YOU STAY</span>
+                </a>
+            </div>
+    </div>
+</nav>
+<!--  end navbar -->
+
+
+
+    <!--  start header -->
+    <header class=" header-booking  vh-100 "  id="header">
+        <div class="booking-overlay">
+            <div class="header-content " id="header-content">
+                <div class="text">
+                    <div class="header-text">
+                        <span class="text-content1">WELCOME TO HAPPINESS</span><br>
+                    </div>
+                    <span class="text-content3">Book your Stay.</span><br>
+                </div>
+            </div>
+            <section class="elementor-container ">
+                <div class=" booking-elementor-element">
+
+                    <form class=" form-booking change w-98 m-auto " id="form">
+                        <div class="row m-auto">
+
+                            <div class=" col">
+                                <label class="label1" for="check-in">Check-in
+                                    <abbr title="Formatted as dd/mm/yyyy">*</abbr>
+                                </label><br>
+                                <input type="text" required="required" id="check-in"
+                                    class="form-control  bg-transparent border-0 border-bottom rounded-0 w-100"
+                                    placeholder="Check-in Date">
+
+                            </div>
+                            <div class=" col">
+                                <label class="label2 for=" check-out">Check-out
+                                    <abbr title="Formatted as dd/mm/yyyy">*</abbr>
+                                </label><br>
+                                <input type="email" id="check-out" class="form-control bg-transparent border-0 
+                                   border-bottom rounded-0" placeholder="Check-out Date">
+                            </div>
+                            
+                            <div class=" col">
+                                <label class="label3 for=" adults">Adults</label><br>
+                                <select class="adults" name="adults" id="adults" placeholder="1">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div class=" col">
+                                <label class="label4 for=" children">Chidren</label><br>
+                                <select class="children" name="children" id="children" placeholder="1">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+                            <div class=" col">
+                                <input type="submit" id="check-out" class="form-btn" value="search">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </section>
+        </div>
+    </header>
+    <!--  end header -->
+
+    
+    <!--  start footer -->
+    <footer id="booking-footer">
+        <div class="footer" >
+            <div class="container">
+                <div class="row">
+                    <div  id="container-item" class="container-item  text-center">
+                        <div class="row ">
+                            <div class="column">
+                                <div class="elementor-widget-container">
+                                    <div class="elementor-footer-title">
+                                        <span> Book Your Stay</span>
+                                    </div>
+                                    <div>
+                                        <ul class="elementor-list-items">
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Our Rooms</span>
+                                                </a>
+                                            </li>
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Food & Beverage</span>
+                                                </a>
+                                            </li>
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Sunset Bar</span>
+                                                </a>
+                                            </li>
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Lobby Bar</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="elementor-widget-container">
+                                    <div class="elementor-footer-title">
+                                        <span> About </span>
+                                    </div>
+
+                                    <div>
+                                        <ul class="elementor-list-items">
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Story & History</span>
+                                                </a>
+                                            </li>
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">FAQ</span>
+                                                </a>
+                                            </li>
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Contact Us</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="elementor-widget-container">
+                                    <div class="elementor-footer-title">
+                                        <span> Accommodations</span>
+                                    </div>
+                                    <div>
+                                        <ul class="elementor-list-items">
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Superior Room</span>
+                                                </a>
+                                            </li>
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Deluxe Room</span>
+                                                </a>
+                                            </li>
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Signature Room</span>
+                                                </a>
+                                            </li>
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Luxury Suite Room</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="elementor-widget-container">
+                                    <div class="elementor-footer-title">
+                                        <span> Spa & Beauty</span>
+                                    </div>
+                                    <div>
+                                        <ul class="elementor-list-items">
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Relax SPA</span>
+                                                </a>
+                                            </li>
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Wellness</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="elementor-widget-container">
+                                    <div class="elementor-footer-title">
+                                        <span> Activities Special Offers</span>
+                                    </div>
+                                    <div class="social d-flex justify-content-center gap-3">
+                                        <div class="icon rounded-circle">
+                                            <i class="fa-brands fa-facebook rounded-circle"></i>
+                                        </div>
+                                        <div class="icon rounded-circle">
+                                            <i class="fab fa-twitter rounded-circle"></i>
+                                        </div>
+                                        <div class="icon rounded-circle">
+                                            <i class="fa-brands fa-github rounded-circle"></i>
+                                        </div>
+                                        <div class="icon rounded-circle">
+                                            <i class="fa-brands fa-instagram rounded-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border">
+                    <div class="copyright">
+                        <p>© Copyright Hoteller Theme Demo – Theme by ThemeGoods</p>
+                    </div>
+                <div class="elementor-footer-container">
+                    <a href="#">
+                        <img class="border-image" src="assets/images/logo (1).png" />
+                    </a>
+                </div> 
+                </div>  
+                </div>
+    </footer>
+    <!--  end footer -->
+
+     <!--  start btn -->
+     <div id="option_btn">
+        <a class="demotip tooltipstered" href="#">
+            <span class="ti-settings">
+                    <i class="fa-solid fa-gear"></i>
+            </span>
+        </a>
+        <a  class="demotip" href="#">
+            <span class="ti-message" >
+                <i class="fa-solid fa-message"></i>
+            </span>
+        </a>
+        <a  class="demotip" href="#">
+            <span class="ti-heart">
+                <i class="fa-sharp fa-solid fa-heart"></i>
+            </span>
+        </a>
+        <a  class="demotip" href="#">
+            <span class="ti-bookmark" >
+                <i class="fa-sharp fa-solid fa-bookmark"></i>
+            </span>
+        </a>
+        <a  class="demotip" href="#">
+            <span class="ti-shopping" >
+                <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+        </a>
+    </div>
+    
+
+    <script src="vendor/js/bootstrap.min.js"></script>
+    <script src="vendor/js/wow.min.js"></script>
+    <script src="assets/js/booking.js"></script>
+
+
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

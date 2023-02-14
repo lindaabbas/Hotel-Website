@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTELLER</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/shortcut-script-app.png">
+    <!-- bootstrap-->
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- fontawsome-->
+    <link rel="stylesheet" href="vendor/css/all.min.css" />
+    <!-- wow animation-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- <link rel="stylesheet" href="vendor/css/animate.css" /> -->
+    <!--owl carousel-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!-- custom css-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
+    <link rel="stylesheet" href="assets/css/media2.css" />
+</head>
+
+
+
+<body style="display: inline;">
+
+
+    <!--  loading screen-->
+    <div class="loading">
+        <span>
+            <img class="loadingimage  " src="assets/images/logo (1).png" style=" width: 140px; opacity: .35; " />
+        </span>
+    </div>
+
+    <!--  top button-->
+    <div class="top" id="top-btn">
+        <button class="border-0 bg-transparent"> <i class="fa-solid fa-chevron-up"></i></button>
+    </div>
+
+
+    <!--  start navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-tranparent" id="navbar">
+        <div class="container">
+            <div>
+                <a class="iconn" id="registerPage2" href="#register-page">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <a class="navbar-menu " id="registerPage" href="#register-page">menu</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 ">
+                    <li class="nav-item">
+                        <span class="nav-link" href="#">EN</span>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link" href="#">ED</span>
+                    </li>
+                </ul>
+            </div>
+            <div class=" d-flex ">
+                <a href="#">
+                    <img src="assets/images/logo (1).png" />
+                </a>
+            </div>
+            <div class="d-flex">
+                <a class="a-title" href="booking.html">
+                    <span class="title">BOOK YOU STAY</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!--  end navbar -->
+
+    <!--  start header -->
+    <header class=" header  vh-100 " id="header">
+        <div class="overlay">
+
+            <div class="header-content " id="header-content">
+                <div class="text">
+                    <div class="header-text">
+                        <span class="text-content1">STAY WITH US FEEL LIKE HOME</span><br>
+                    </div>
+
+                    <span class="text-content2">Redefine your expectations.</span><br>
+                    <span class="text-content3">A hotel experience, unlike the rest</span>
+                </div>
+            </div>
+            <section class="elementor-container ">
+                <div class=" elementor-element">
+                    <form class=" form change w-98 m-auto " id="reg-form">
+                        <div class="row m-auto">
+
+                            <div class=" col">
+                                <label class="label1" for="check-in">Check-in
+                                    <abbr title="Formatted as dd/mm/yyyy">*</abbr>
+                                </label><br>
+                                <input type="text" required="required" id="check-in"
+                                    class="form-control  "
+                                    placeholder="Check-in Date">
+
+                            </div>
+                            <div class=" col">
+                                <label class="label2 for=" check-out">Check-out
+                                    <abbr title="Formatted as dd/mm/yyyy">*</abbr>
+                                </label><br>
+                                <input type="email" id="check-out" class="form-control  "
+                                 placeholder="Check-out Date">
+                            </div>
+
+                            <div class=" col">
+                                <label class="label3 for=" adults">Adults</label><br>
+                                <select class="adults" name="adults" id="adults" placeholder="1">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                            </div>
+                            <div class=" col">
+                                <label class="label4 for=" children">Children</label><br>
+                                <select class="children" name="children" id="children" placeholder="1">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                </select>
+                            </div>
+                            <div class=" col">
+                                <button type="submit" id="check-out" class="form-btn" value="search">search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </section>
+        </div>
+
+        <!-- start booking page-->
+        <nav class="register-page pt-4" id="register-page">
+            <div class="nav-top text-white  border-bottom py-2">
+                <div class="container d-flex justify-content-between">
+                    <div class="left-content d-flex  justify-content-between align-items-center">
+                        <div class="elementor-icon-wrapper">
+                            <a class="elementor-icon" href="#">
+                                <i class=" fas fa-times" id="booking-icon"></i>
+                            </a>
+                        </div>
+                        <div class=" ms-5">
+                            <span class="booking-text">EN</span>
+                        </div>
+                        <div class=" ms-2">
+                            <span class="booking-text">DE</span>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img class="border-image" src="assets/images/logo (1).png" />
+                        </a>
+                    </div>
+                    <div class="right-content">
+                        <a href="booking.html">
+                            <span class="booking-title">BOOK YOU STAY</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="booking-elementor-container elementor-column-gap-default pt-5 ">
+
+                <ul class="elementor-icon-list-items">
+                    <li class="elementor-icon-list-item">
+                        <a href="#">
+                            <span>OurRooms</span>
+                        </a>
+                    </li>
+                    <li class="elementor-icon-list-item">
+                        <a href="#">
+                            <span>About Us</span>
+                        </a>
+                    </li>
+                    <li class="elementor-icon-list-item">
+                        <a href="#">
+                            <span>Restaurant</span>
+                        </a>
+                    </li>
+                    <li class="elementor-icon-list-item">
+                        <a href="#">
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="latest-news py-5 my-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="owl-container">
+                                <div class="owl-carousel carousel_02">
+                                    <div class="news-card">
+                                        <div class="news-poster ">
+                                            <img src="assets/images/interior-of-hotel-room-2.jpg" alt="" />
+                                            <div class="carousel-content">
+                                                <div class="carousel-title">
+                                                    <h3>
+                                                        <a href="#">Superior Room</a>
+                                                    </h3><br>
+                                                    <div class="carousel-span">
+                                                        <span>
+                                                            30 m2 / 2 adults 1 children
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-price">
+                                                    <div class="carousel-price-from ">from</div>
+                                                    <span>$199</span>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="news-card">
+                                        <div class="news-poster ">
+                                            <img src="assets/images/interior-of-hotel-room-3.jpg" alt="" />
+                                            <div class="carousel-content">
+                                                <div class="carousel-title">
+                                                    <h3>
+                                                        <a href="#">Sgnature Room</a>
+                                                    </h3><br>
+                                                    <div class="carousel-span">
+                                                        <span>
+                                                            70 m2 / 3 adults 2 children
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-price">
+                                                    <div class="carousel-price-from ">from</div>
+                                                    <span>$399</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="news-card">
+                                        <div class="news-poster ">
+                                            <img src="assets/images/interior-of-hotel-room-1.jpg" alt="" />
+                                            <div class="carousel-content">
+                                                <div class="carousel-title">
+                                                    <h3>
+                                                        <a href="#">Deluxe Room</a>
+                                                    </h3><br>
+                                                    <div class="carousel-span">
+                                                        <span>
+                                                            55 m2 / 4 adults 2 children
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-price">
+                                                    <div class="carousel-price-from ">from</div>
+                                                    <span>$299</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="news-card">
+                                        <div class="news-poster ">
+                                            <img src="assets/images/interior-of-hotel-room-4.jpg" alt="" />
+                                            <div class="carousel-content">
+                                                <div class="carousel-title">
+                                                    <h3>
+                                                        <a href="#">Luxury Room</a>
+                                                    </h3><br>
+                                                    <div class="carousel-span">
+                                                        <span>
+                                                            120 m2 / 4 adults 2 children
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-price">
+                                                    <div class="carousel-price-from ">from</div>
+                                                    <span>$499</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="elementor-icon-list">
+                            <div class="column">
+                                <div class="elementor-widget-container">
+                                    <div class="d-flex">
+                                        <div class="elementor-booking-title">
+                                            <span> Call us:</span>
+                                        </div>
+                                        <div class="elementor-booking-title">
+                                            <span> 41 (0)54 2344 00</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="social d-flex justify-content-center gap-3">
+                                        <div class="icon rounded-circle">
+                                            <i class="fa-brands fa-facebook rounded-circle"></i>
+                                        </div>
+                                        <div class="icon rounded-circle">
+                                            <i class="fab fa-twitter rounded-circle"></i>
+                                        </div>
+                                        <div class="icon rounded-circle">
+                                            <i class="fa-brands fa-github rounded-circle"></i>
+                                        </div>
+                                        <div class="icon rounded-circle">
+                                            <i class="fa-brands fa-instagram rounded-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <div class="overlay-reg" id="booking-overlay"></div>
+            </div>
+            <!-- end register page-->
+            </nav>
+    </header>
+    <!--  end header -->
+
+    <!--  start section1 -->
+    <section class="section1  pt-4 pb-5" id="section1">
+        <div class="container ">
+            <div class="pb-5">
+                <h4 class="section1-title"> the finest hotel at the best price</h4>
+                <div class="section1-span1" id="section1-span1">The best people to take care of</div><br>
+                <div class="section1-span2" id="section1-span2">our most valuable asset:you.</div>
+            </div>
+            <div class="small-container d-flex">
+                <h4>
+                    Leather detail shoulder contrastic colour contour
+                    stunning silhouette working peplum. Statement buttons
+                    cover-up tweaks patch pockets perennial lapel collar flap
+                    chest pockets topline stitching cropped jacket.
+                </h4>
+            </div>
+            <div class="div-container pb-5">
+                <h2 class="section1-heading-title mb-5 pb-5 " id="span-section">
+                    <a href="#">Get more information
+                        <span>__</span>
+                    </a>
+                </h2>
+            </div>
+
+        </div>
+    </section>
+    <!--  end section1 -->
+
+    <!--  start section2 our-room -->
+    <section id="our-room">
+        <div class="our-room ">
+            <div class="container">
+                <div class="section2-title " >
+                    <h3 id="section2-titlee">Our Rooms</h3>
+                </div>
+                <div class="latest-news ">
+                    <div class="container_03-owl pb-5 mb-5">
+                        <div class="row">
+                            <div class="owl-container-carousel_03">
+                                <div class=" owl-carousel carousel_03">
+                                    <div class="news-card">
+                                        <div class="news-poster ">
+                                            <img src="assets/images/interior-of-hotel-room-2.jpg" alt="" />
+                                            <div class="carousel-content">
+                                                <div class="carousel_03-title">
+                                                    <h3>
+                                                        <a href="#">Superior Room</a>
+                                                    </h3><br>
+                                                    <div class="carousel-span">
+                                                        <span>
+                                                            30 m2 / 2 adults 1 children
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel_03-price">
+                                                    <div class="carousel_03-price-from ">from</div>
+                                                    <span>$199</span>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="news-card">
+                                        <div class="news-poster ">
+                                            <img src="assets/images/interior-of-hotel-room-3.jpg" alt="" />
+                                            <div class="carousel-content">
+                                                <div class="carousel_03-title">
+                                                    <h3>
+                                                        <a href="#">Signature Room</a>
+                                                    </h3><br>
+                                                    <div class="carousel-span">
+                                                        <span>
+                                                            70 m2 / 3 adults 2 children
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel_03-price">
+                                                    <div class="carousel_03-price-from ">from</div>
+                                                    <span>$399</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="news-card">
+                                        <div class="news-poster ">
+                                            <img src="assets/images/interior-of-hotel-room-1.jpg" alt="" />
+                                            <div class="carousel-content">
+                                                <div class="carousel_03-title">
+                                                    <h3>
+                                                        <a href="#">Deluxe Room</a>
+                                                    </h3><br>
+                                                    <div class="carousel-span">
+                                                        <span>
+                                                            55 m2 / 4 adults 2 children
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel_03-price">
+                                                    <div class="carousel_03-price-from ">from</div>
+                                                    <span>$299</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="news-card">
+                                        <div class="news-poster ">
+                                            <img src="assets/images/interior-of-hotel-room-4.jpg" alt="" />
+                                            <div class="carousel-content">
+                                                <div class="carousel_03-title">
+                                                    <h3>
+                                                        <a href="#">Luxury Room</a>
+                                                    </h3><br>
+                                                    <div class="carousel-span">
+                                                        <span>
+                                                            120 m2 / 4 adults 2 children
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel_03-price">
+                                                    <div class="carousel_03-price-from ">from</div>
+                                                    <span>$499</span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  end section2 our-room -->
+
+
+    <!--  start section3  -->
+    <section class="section3 pt-3 pb-5 " id="section3">
+        <div class="container  mt-5 pt-5">
+            <div class="section3-title d-flex">
+                <div class="row">
+                    <h4> a greate adventure begin here
+                    </h4>
+                    <div class="section3-title2 mt-3">
+                        <h1 id="section3-title2">We strive only</h1><br>
+                        <h2 id="section3-title22" class="d-flex">for the best!</h2>
+                    </div>
+                </div>
+                <span>
+                    <p class="section3-pra" id="section3-pra">Aliquip veniam delectus, Marfa eiusmod
+                        Pinterest in do umami readymade swag. Selfies
+                        iPhone Kickstarter, drinking vinegar</p>
+                </span>
+            </div>
+            <div class="section3-img d-flex">
+                <div class="img1">
+                    <img src="assets/images/yiranding-OWA0hDVCugY-unsplash.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  end section3  -->
+
+
+
+    <!--  start section4 -->
+    <section class="section4 ">
+        <div class=" d-flex position-relative">
+            <div class="container4 ">
+                <img src="assets/images/annie-spratt-215756-unsplash.jpg" alt="" />
+            </div>
+            <div class="elementor-container-section4">
+                <ul class="section4-icon-list-items">
+                    <li class="section4-icon-list-item d-flex">
+                        <a href="#">
+                            <span>Food & Beverage</span>
+                        </a>
+                    </li>
+                    <li class="section4-icon-list-item d-flex">
+                        <a href="#">
+                            <span>Lobby Bar</span>
+                        </a>
+                    <li class="section4-icon-list-item d-flex">
+                        <a href="#">
+                            <span>Dinning Experience</span>
+                        </a>
+                    </li>
+                    <li class="section4-icon-list-item d-flex">
+                        <a href="#">
+                            <span>Sunset Bar</span>
+                        </a>
+                    </li>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="section4-img2">
+                <img src="assets/images/man.jpg" alt="" />
+            </div>
+        </div>
+    </section>
+    <!--  end section4  -->
+
+     <!--  start section5 -->
+     <section class=" elementor4-section-stretched mt-0  ">
+        <div class="elementor4-container elementor-column-gap-default">
+            <div class="elementor4-element-populated">
+                <div class="distortion_grid_wrapper">
+                    <div class="distortion_grid_item--bg">
+                    <div class="distortion_grid_item distortion_grid_item--bg ">
+                        <div class="distortion_grid_item-img  ">
+                            <img id="img1" src="assets/images/sun-beds-by-the-pool-WYJQMUG-610x610.jpg" class="position bg-dark" alt=""/>
+                            <img id="img2" src="assets/images/beautiful-woman-by-swimming-pool-DMJH2W9-610x610.jpg" class="img-top position"  alt=""/>
+                            <canvas id="myCanvas" width="930" height="930" style="width: 620px; height: 620px;"></canvas>
+                            <div class="distortion_grid_item-content ">
+                                <span class="distortion_grid_item-meta">
+                                    <h2 id="title" class="distortion_grid_item-title">Relax Spa</h2>
+                                </span>
+                              <!--   <span class="span-para">
+                                    Leather detail shoulder contrastic colour contour stunning silhouette working peplum. Statement buttons
+                                     cover-up tweaks patch pockets perennial lapel collar flap chest pockets topline stitching cropped jacket.
+                                </span> -->
+                            </div>
+                        </div>
+                        <div class="distortion_grid_item-img ">
+                            <img src="assets/images/masseur-doing-massage-on-woman-body-in-the-spa-sal-UGDXK58-610x610.jpg" class="position2 " alt=""/>
+                            <img  id="img22" src="assets/images/toa-heftiba-578093-unsplash-610x610.jpg" class="img-top position2"  alt=""/>
+                            <canvas id="myCanvas" width="930" height="930" style="width: 620px; height: 620px;"></canvas>
+                            <div class="distortion_grid_item-content d-flex">
+                                <span class="distortion_grid_item-meta">
+                                    <h2 id="title" class="distortion_grid_item-title2">Wellness</h2>
+                                </span>
+                             <!--    <span class="span-para2">
+                                    Leather detail shoulder contrastic colour contour stunning silhouette working peplum. Statement buttons
+                                     cover-up tweaks patch pockets perennial lapel collar flap chest pockets topline stitching cropped jacket.
+                                </span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 </div>
+           </div>
+      
+        </div>
+    </div>
+     </section>
+      <!--  end section5 -->
+
+      
+
+
+
+        <!--  start section7 -->
+      <section class="section1 container-section1 pt-4 pb-5">
+        <div class="container ">
+            <div class="pb-5">
+                <h4 class="section1-title container-section11"> the finest hotel at the best price</h4>
+                <div class="section1-span11" id="section01-span1">Our facilities are</div><br>
+                <div class="section1-span22" id="section01-span2">your playground.</div>
+            </div>
+            <div class="small-container d-flex">
+                <h4>
+                    Leather detail shoulder contrastic colour contour
+                    stunning silhouette working peplum. Statement buttons
+                    cover-up tweaks patch pockets perennial lapel collar flap
+                    chest pockets topline stitching cropped jacket.
+                </h4>
+            </div>
+            <div class="div-container pb-5">
+                <h2 class="section1-heading-title mb-5 pb-5 " id="span07-section">
+                    <a href="#">Get more information
+                        <span>__</span>
+                    </a>
+                </h2>
+            </div>
+
+        </div>
+    </section>
+      <!--  end section7 -->
+
+
+       <!--  start section6 -->
+       <section id="our-room">
+        <div class="our-room ">
+            <div class="container">
+                <div class="latest-news ">
+                    <div class="container_03-owl  mt-0">
+                        <div class="row">
+                            <div class="owl-container-carousel_04">
+                                <div class="owl-carousel carousel_04">
+                                    <div class="news-card">
+                                        <div class="news-poster ">
+                                            <img src="assets/images/hotel-carlota-mexico-city-jsa_dezeen_hero-768x432.jpg" alt="" />
+                                            <div class="carousel-content">
+                                                <div class="carousel_04-title">
+                                                    <h3>
+                                                        <a href="#">Swimming Pool</a>
+                                                    </h3><br>
+                                                
+                                                </div>
+                                                
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="news-card">
+                                        <div class="news-poster ">
+                                            <img  src="assets/images/women-holds-ping-pong-rackets-table-tennis-6MACWTP-768x511.jpg" alt="" />
+                                            <div class="carousel-content">
+                                                <div class="carousel_04-title">
+                                                    <h3>
+                                                        <a href="#">Table Tennis</a>
+                                                    </h3><br>
+                                                   
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="news-card">
+                                        <div class="news-poster ">
+                                            <img src="assets/images/interior-of-hotel-room-1.jpg" alt="" />
+                                            <div class="carousel-content">
+                                                <div class="carousel_04-title">
+                                                    <h3>
+                                                        <a href="#">Deluxe Room</a>
+                                                    </h3><br>
+                                                  
+                                                </div>
+                                             
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+       <!--  end section6 -->
+       
+    <!--  start footer -->
+    <footer id="footer mt-0">
+        <div class="footer">
+            <div class="container">
+                <div class=" d-flex justify-content-center">
+                    <div class=" mb-3 position-relative">
+                        <span class="title">
+                            <h2 class="move" id="address">Address</h2>
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div id="item1" class="col-lg-3 col-md-4 text-center item  p-3 moveitem animate__delay-2s">
+
+                        <div class="elementor-widget-container">
+                            <p class="para">Aliquip veniam delectus, Marfa eiusmod Pinterest
+                                in do umami readymade swag. Selfies iPhone Kickstarter, drinking vinegar</p>
+                        </div>
+                        <div>
+                            <a class="elementor-title" href="#">
+                                <span>Visit Us</span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div id="item2" class="col-lg-3 col-md-4 text-center item2 p-3 moveitem animate__delay-2s">
+                        <div class="elementor-title-item ">
+                            <p>Spend your</p>
+                            <span class="elementor-titlee">holidays with us</span>
+                        </div>
+                        <div>
+                            <p class="footer-para">38701 Ukraine, Poltava Region, Sosnivka village, Sosnova Street, 1
+                            </p>
+                        </div>
+                        <div>
+                            <div>
+                                <p class="footer-title">
+                                    <a class="footer-title" href="#">
+                                        Book your stay
+                                        <span>__</span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-item  text-center">
+
+                        <div class="row ">
+                            <div class="column">
+                                <div class="elementor-widget-container">
+                                    <div class="elementor-footer-title">
+                                        <span> Book Your Stay</span>
+                                    </div>
+                                    <div>
+                                        <ul class="elementor-list-items">
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Our Rooms</span>
+                                                </a>
+                                            </li>
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Food & Beverage</span>
+                                                </a>
+                                            </li>
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Sunset Bar</span>
+                                                </a>
+                                            </li>
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Lobby Bar</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="elementor-widget-container">
+                                    <div class="elementor-footer-title">
+                                        <span> About </span>
+                                    </div>
+
+                                    <div>
+                                        <ul class="elementor-list-items">
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Story & History</span>
+                                                </a>
+                                            </li>
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">FAQ</span>
+                                                </a>
+                                            </li>
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Contact Us</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="elementor-widget-container">
+                                    <div class="elementor-footer-title">
+                                        <span> Accommodations</span>
+                                    </div>
+                                    <div>
+                                        <ul class="elementor-list-items">
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Superior Room</span>
+                                                </a>
+                                            </li>
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Deluxe Room</span>
+                                                </a>
+                                            </li>
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Signature Room</span>
+                                                </a>
+                                            </li>
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Luxury Suite Room</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="elementor-widget-container">
+                                    <div class="elementor-footer-title">
+                                        <span> Spa & Beauty</span>
+                                    </div>
+                                    <div>
+                                        <ul class="elementor-list-items">
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Relax SPA</span>
+                                                </a>
+                                            </li>
+                                            <li class="elementor-list-item">
+                                                <a class="elementor-list-item" href="#">
+                                                    <span class="elementor-list-item-text">Wellness</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="elementor-widget-container">
+                                    <div class="elementor-footer-title">
+                                        <span> Activities Special Offers</span>
+                                    </div>
+                                    <div class="social d-flex justify-content-center gap-3">
+                                        <div class="icon rounded-circle">
+                                            <i class="fa-brands fa-facebook rounded-circle"></i>
+                                        </div>
+                                        <div class="icon rounded-circle">
+                                            <i class="fab fa-twitter rounded-circle"></i>
+                                        </div>
+                                        <div class="icon rounded-circle">
+                                            <i class="fa-brands fa-github rounded-circle"></i>
+                                        </div>
+                                        <div class="icon rounded-circle">
+                                            <i class="fa-brands fa-instagram rounded-circle"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border">
+                <div class="copyright">
+                    <p>© Copyright Hoteller Theme Demo – Theme by ThemeGoods</p>
+                </div>
+                <div class="elementor-footer-container">
+                    <a href="#">
+                        <img class="border-image" src="assets/images/logo (1).png" />
+                    </a>
+                    <!--  <p class="coloured">Made By/Linda Abbas</p> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--  end footer -->
+
+
+    <!--  start btn -->
+    <div id="option_btn">
+        <a class="demotip tooltipstered" href="#">
+            <span class="ti-settings">
+                <i class="fa-solid fa-gear"></i>
+            </span>
+        </a>
+        <a class="demotip" href="#">
+            <span class="ti-message">
+                <i class="fa-solid fa-message"></i>
+            </span>
+        </a>
+        <a class="demotip" href="#">
+            <span class="ti-heart">
+                <i class="fa-sharp fa-solid fa-heart"></i>
+            </span>
+        </a>
+        <a class="demotip" href="#">
+            <span class="ti-bookmark">
+                <i class="fa-sharp fa-solid fa-bookmark"></i>
+            </span>
+        </a>
+        <a class="demotip" href="#">
+            <span class="ti-shopping">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+        </a>
+    </div>
+
+</body>
+<!--  end btn -->
+
+<script src="vendor/js/bootstrap.min.js"></script>
+<script src="vendor/js/wow.min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+
+<script>
+    new WOW().init();
+</script>
+</body>
+
+</html>
